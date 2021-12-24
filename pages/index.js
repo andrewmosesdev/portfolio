@@ -12,7 +12,7 @@ export default function Home() {
         <meta name="description" content="Home page and navigation" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header pageType={'home'}/>
+      <Header pageType={"home"} />
       <MainContent>
         <h1 className="page-title">Home</h1>
         <section className="home-navigation-section">
@@ -45,7 +45,14 @@ export default function Home() {
               ajndsf kjvnasl dfjhag lsdkjh vnal;j ksdnvl ajsdha glj;kd sn;v jaj
               sdl fjhaj vkd hfa jkvh alj kvdfs hlvk ajnsdh flga jhds jk;ag
               hdskjfl vhald uhiag fusdh gual sdhfk vbnjd fklb avjd skf ;agh
-              dsfla ugh glj kdfsh
+              dsfla ugh glj kdfsh lorem ipsum aljdsh lakj sdkv hlajv hlvd havj
+              lsd hav ljsdv lajd snva lsbdv jkla bds kl vba jks dbvla sdbv lasbd
+              vlka js db vlka jsd bvlk balvs djkv bal jsd b vlka jbsdj kvb akj
+              sdlbvajbs djk vbalj kdsb vjakbs dlvbas d;vjan sdjlkgf hsdkjfl
+              gndsvlj asdflv ajndsf kjvnasl dfjhag lsdkjh vnal;j ksdnvl ajsdha
+              glj;kd sn;v jaj sdl fjhaj vkd hfa jkvh alj kvdfs hlvk ajnsdh flga
+              jhds jk;ag hdskjfl vhald uhiag fusdh gual sdhfk vbnjd fklb avjd
+              skf ;agh dsfla ugh glj kdfsh
             </p>
           </div>
         </section>
