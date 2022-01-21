@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import igPic from "../assets/gravity.png";
+import igPic from "./assets/gravity.png";
 
 export default function IgSection() {
   return (
@@ -12,6 +12,7 @@ export default function IgSection() {
         </h3>
         <a href="https://www.instagram.com/p/CY19qkOP0PB/" alt="">
           <Image
+            placeholder={"blur"}
             src={igPic}
             alt={"Typed words which read: "}
             width={200}
