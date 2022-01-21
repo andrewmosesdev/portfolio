@@ -20,7 +20,7 @@ function HeroSection() {
         <div>
           <div>
             <a
-              href="https://www.amazon.com/Sadder-Songs-Andrew-Moses/dp/B08X6DRP4N/ref=sr_1_1?dchild=1&keywords=sadder+songs&qid=1617484950&sr=8-1"
+              href="https://www.amazon.com/dp/B09QNZWP75"
               target="_blank"
               rel="noreferrer"
               aria-label="Link to my amazon product page"
