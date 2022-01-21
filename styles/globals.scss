@@ -3,6 +3,8 @@ $side-margin: 5%;
 $major-margin: 25px;
 $charcoal: #36454f;
 $white: #f7f7f7;
+$hoverColor: #1c78c0;;
+
 @mixin flexStart {
   display: flex;
   flex-direction: flex-start;
@@ -337,6 +339,20 @@ footer {
 #icon {
   color: $white;
   font-size: 36px;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: $hoverColor;
+  transition: .5s;
+}
+
+#icon:hover {
+  color: $hoverColor;
+  transition: .5s;
 }
 
 // ==================================
