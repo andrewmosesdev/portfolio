@@ -1,79 +1,78 @@
 import React from "react";
 import {
-  FaGithub,
+  FaTwitter,
   FaLinkedin,
   FaInstagram,
   FaAmazon,
   FaEnvelope,
+  FaArrowAltCircleRight,
 } from "react-icons/fa";
+import IconTree from "./IconTree";
 
 export default function Footer() {
   return (
     <footer>
       <div className="footer-inner-container">
-        <h4>External Links</h4>
-        <div className="footer-contact-links">
-          <div>
-            <a
-              href="https://github.com/andrewmosesdrive"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Link to my github page"
-            >
-              <h3>
-                <FaGithub id="icon" />
-              </h3>
-            </a>
+        <section className="links-section">
+          <h4>External Links</h4>
+          <div className="footer-contact-links">
+            <div>
+              <a
+                href="https://twitter.com/amwriteswords"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Link to my github page"
+              >
+                <h3>
+                  <FaTwitter id="icon" />
+                </h3>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.linkedin.com/in/andrewjmoses/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Link to my linkedin page"
+              >
+                <h3>
+                  <FaLinkedin id="icon" />
+                </h3>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.instagram.com/amwriteswords/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Link to my instagram page"
+              >
+                <h3>
+                  <FaInstagram id="icon" />
+                </h3>
+              </a>
+            </div>
+            <div>
+              <a
+                href="mailto:andrewmosesdrive@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Link to email me directly"
+              >
+                <h3>
+                  <FaEnvelope id="icon" />
+                </h3>
+              </a>
+            </div>
           </div>
-          <div>
-            <a
-              href="https://www.linkedin.com/in/andrewjmoses/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Link to my linkedin page"
-            >
-              <h3>
-                <FaLinkedin id="icon" />
-              </h3>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://www.instagram.com/amwriteswords/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Link to my instagram page"
-            >
-              <h3>
-                <FaInstagram id="icon" />
-              </h3>
-            </a>
-          </div>
-          <div>
-            <a
-              href="https://www.amazon.com/Sadder-Songs-Andrew-Moses/dp/B08X6DRP4N/ref=sr_1_1?dchild=1&keywords=sadder+songs&qid=1617484950&sr=8-1"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Link to my amazon product page"
-            >
-              <h3>
-                <FaAmazon id="icon" />
-              </h3>
-            </a>
-          </div>
-          <div>
-            <a
-              href="mailto:andrewmosesdrive@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Link to my amazon product page"
-            >
-              <h3>
-                <FaEnvelope id="icon" />
-              </h3>
-            </a>
-          </div>
-        </div>
+        </section>
+        <section className="built-with-section">
+          <h4>Built with:</h4>
+          <IconTree />
+          <h5>
+            Need a website or landing page? Reach out through any of the links to the left.
+          </h5>
+        </section>
       </div>
     </footer>
   );

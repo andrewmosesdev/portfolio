@@ -1,0 +1,435 @@
+$max-width-screen: 1328px;
+$side-margin: 5%;
+$major-margin: 25px;
+$charcoal: #36454f;
+$white: #f7f7f7;
+@mixin flexStart {
+  display: flex;
+  flex-direction: flex-start;
+}
+@mixin shadow {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+}
+@mixin section {
+  width: 90%;
+  max-width: $max-width-screen;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+@mixin justAlign {
+  justify-content: center;
+  align-items: center;
+}
+
+// =============================
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+header {
+  background-color: $white;
+  height: 65px;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid $white;
+  z-index: 9999;
+  width: 100%;
+  display: flex;
+  @include justAlign;
+  @include shadow;
+}
+
+.header-inner-container {
+  width: 100%;
+  max-width: $max-width-screen;
+  padding-right: $side-margin;
+  padding-left: $side-margin;
+  text-align: center;
+}
+
+main {
+  height: auto;
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  @include justAlign;
+}
+
+.hero-section,
+.works-section,
+.split-section {
+  @include section;
+}
+
+.hero-section > div {
+  border-radius: 8px;
+  @include flexStart;
+  @include shadow;
+
+  > span > img {
+    border-radius: 8px 0px 0px 8px;
+  }
+  > div {
+    display: flex;
+    flex-direction: column;
+    @include justAlign;
+    flex-grow: 1;
+    min-width: 225px;
+
+    > div {
+      text-align: center;
+    }
+
+    #hero-icon {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+.works-section {
+  h4 {
+    word-wrap: break-word;
+  }
+
+  a {
+    max-width: 200px;
+    text-align: center;
+  }
+
+  > div {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    @include shadow;
+  }
+}
+
+.split-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ig-section,
+.contact-section {
+  width: 100%;
+}
+
+.ig-section {
+  max-width: 35%;
+}
+
+.contact-section {
+  max-width: 55%;
+}
+
+.ig-section > div {
+  border-radius: 8px;
+  @include flexStart;
+  @include shadow;
+  flex-direction: column;
+  @include justAlign;
+  > a {
+    @include shadow;
+    height: 260px;
+    margin-bottom: 30px;
+  }
+}
+
+.ig-section > div,
+.contact-section > div {
+  border-radius: 8px;
+  @include flexStart;
+  @include shadow;
+}
+
+.contact-section > div {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contact-section-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  a {
+    color: black;
+    svg {
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
+
+.icon-tree-container {
+  background-color: black;
+  padding: 5px;
+  border: 1px solid $white;
+  border-radius: 50%;
+  display: grid;
+  @include justAlign;
+  min-width: 210px;
+  min-height: 210px;
+  max-height: 210px;
+  max-width: 210px;
+  width: 100%;
+
+  > * {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  svg {
+    width: 40px;
+    height: 40px;
+    transform: rotate(0.23turn);
+  }
+
+  .icon-tree-rotation-point {
+    background-color: $white;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: center;
+    border: 10px solid $white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+.icon-tree-rotation-point svg {
+  background-color: $white;
+  align-self: center;
+  justify-self: center;
+  transform: rotate(1turn);
+}
+
+.item {
+  display: block;
+  margin: 0px auto;
+  animation: spinAround 30s linear infinite;
+
+  /* git */
+  &:nth-child(1) {
+    animation-delay: -3s;
+    color: #f34f29;
+  }
+  // netlify
+  &:nth-child(2) {
+    animation-delay: -6s;
+    color: #30c8c9;
+  }
+  // html
+  &:nth-child(3) {
+    animation-delay: -9s;
+    color: #e54d26;
+  }
+  // js
+  &:nth-child(4) {
+    animation-delay: -12s;
+    color: #f0db4f;
+  }
+  // react
+  &:nth-child(5) {
+    animation-delay: -15s;
+    color: #47a3da;
+  }
+  // node
+  &:nth-child(6) {
+    animation-delay: -18s;
+    color: #83cd29;
+  }
+  // babel
+  &:nth-child(7) {
+    animation-delay: -21s;
+    color: #f9dc3e;
+  }
+  // webpack
+  &:nth-child(8) {
+    animation-delay: -24s;
+    color: #1c78c0;
+  }
+  // css
+  &:nth-child(9) {
+    animation-delay: -27s;
+    color: #3d8fc6;
+  }
+  &:nth-child(10) {
+    animation-delay: -30s;
+    color: #c69;
+  }
+}
+
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg) translate(80px);
+  }
+  to {
+    transform: rotate(-360deg) translate(80px);
+  }
+}
+
+footer {
+  background-color: black;
+  height: auto;
+  min-height: 120px;
+  margin-top: $major-margin;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer-inner-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  max-width: 1328px;
+  margin-left: $side-margin;
+  margin-right: $side-margin;
+  display: flex;
+  justify-content: space-between;
+
+  .links-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 282px;
+  }
+  .built-with-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h5 {
+      max-width: 200px;
+    }
+  }
+
+  h4,
+  h5 {
+    color: $white;
+  }
+}
+
+.footer-contact-links {
+  justify-content: space-between;
+  width: 100%;
+  @include flexStart;
+}
+
+#icon {
+  color: $white;
+  font-size: 36px;
+}
+
+// ==================================
+
+@media screen and (max-width: 770px) {
+  .book-links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 380px;
+    overflow: scroll;
+
+    a {
+      margin-top: 40px;
+    }
+
+    > a:nth-child(1) {
+      margin-top: 830px;
+    }
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .split-section {
+    flex-direction: column;
+    align-items: center;
+
+    .ig-section {
+      margin-bottom: 25px;
+    }
+
+    .ig-section,
+    .contact-section {
+      max-width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .hero-section > div {
+    flex-direction: column;
+    text-align: center;
+
+    > span > img {
+      border-radius: 8px 8px 0px 0px;
+    }
+
+    > div {
+      padding-left: 15px;
+      padding-right: 15px;
+
+      #hero-icon {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer-inner-container .links-section {
+    margin-bottom: 0px;
+  }
+
+  .footer-inner-container .built-with-section {
+    @include flexStart;
+  }
+  .footer-contact-links {
+    flex-direction: column;
+  }
+
+  .split-section {
+    .ig-section,
+    .contact-section {
+      max-width: 90%;
+    }
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .footer-inner-container {
+    justify-content: center;
+    .built-with-section {
+      display: none;
+    }
+    .links-section {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 299px) {
+  * {
+    display: none;
+  }
+  
+}
