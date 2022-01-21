@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import featuredPic from '../assets/conversationsPic.jpg'
+import conversationsPic from "./assets/conversationsPic.jpg";
 import { FaAmazon } from "react-icons/fa";
 
 function HeroSection() {
@@ -11,7 +11,8 @@ function HeroSection() {
       </h2>
       <div>
         <Image
-          src={featuredPic}
+          priority
+          src={conversationsPic}
           alt={"A man sitting alone on a front porch"}
           width={800}
           height={480}

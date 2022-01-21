@@ -3,9 +3,7 @@ import {
   FaTwitter,
   FaLinkedin,
   FaInstagram,
-  FaAmazon,
   FaEnvelope,
-  FaArrowAltCircleRight,
 } from "react-icons/fa";
 import IconTree from "./IconTree";
 

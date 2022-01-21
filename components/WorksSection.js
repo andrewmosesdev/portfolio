@@ -1,7 +1,7 @@
 import React from "react";
-import sadderSongs from "../assets/sadderSongsImg.png";
-import conversations from "../assets/conversationsImg.png";
-import allTheThingsImg from "../assets/allTheThingsImg.png"
+import sadderSongs from "./assets/sadderSongsImg.png";
+import conversations from "./assets/conversationsImg.png";
+import allTheThingsImg from "./assets/allTheThingsImg.png";
 import Image from "next/image";
 
 export default function WorksSection() {
@@ -15,6 +15,7 @@ export default function WorksSection() {
           rel="noreferrer"
         >
           <Image
+          placeholder={'blur'}
             src={conversations}
             alt={"Conversations with Myself book cover"}
             width={200}

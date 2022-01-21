@@ -13,7 +13,11 @@ export default function Home() {
     <div id="main-container" className="main-container">
       <Head>
         <title>amwriteswords</title>
-        <meta name="description" content="Home page and navigation" />
+        <meta property="og:title" content="amwriteswords" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.amwriteswords.net" />
+        <meta property="og:image" content="/favicon.ico" />
+        <meta name="description" content="Home page for Andrew Moses, author" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header pageType={"home"} />
