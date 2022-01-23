@@ -3,11 +3,13 @@ import sadderSongs from "./assets/sadderSongsImg.png";
 import conversations from "./assets/conversationsImg.png";
 import allTheThingsImg from "./assets/allTheThingsImg.png";
 import Image from "next/image";
+import { CgScrollV } from "react-icons/cg"
 
 export default function WorksSection() {
   return (
     <section className="works-section">
       <h2>Works</h2>
+      <CgScrollV />
       <div className="book-links">
         <a
           href={"https://www.amazon.com/dp/B09QNZWP75"}
@@ -15,7 +17,7 @@ export default function WorksSection() {
           rel="noreferrer"
         >
           <Image
-          placeholder={'blur'}
+            placeholder={"blur"}
             src={conversations}
             alt={"Conversations with Myself book cover"}
             width={200}

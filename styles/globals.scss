@@ -3,7 +3,7 @@ $side-margin: 5%;
 $major-margin: 25px;
 $charcoal: #36454f;
 $white: #f7f7f7;
-$hoverColor: #1c78c0;;
+$hoverColor: #1c78c0;
 
 @mixin flexStart {
   display: flex;
@@ -47,6 +47,13 @@ header {
   @include shadow;
 }
 
+a {
+  color: black;
+  svg {
+    color: $hoverColor;
+  }
+}
+
 .header-inner-container {
   width: 100%;
   max-width: $max-width-screen;
@@ -69,33 +76,47 @@ main {
   @include section;
 }
 
-.hero-section > div {
-  border-radius: 8px;
-  @include flexStart;
-  @include shadow;
-
-  > span > img {
-    border-radius: 8px 0px 0px 8px;
+.hero-section {
+  h2 {
+    color: black;
   }
   > div {
-    display: flex;
-    flex-direction: column;
-    @include justAlign;
-    flex-grow: 1;
-    min-width: 225px;
+    border-radius: 8px;
+    @include flexStart;
+    @include shadow;
 
-    > div {
-      text-align: center;
+    > span > img {
+      border-radius: 8px 0px 0px 8px;
     }
+    > div {
+      display: flex;
+      flex-direction: column;
+      @include justAlign;
+      flex-grow: 1;
+      min-width: 225px;
 
-    #hero-icon {
-      width: 80px;
-      height: 80px;
+      > div {
+        text-align: center;
+      }
+
+      #hero-icon {
+        width: 80px;
+        height: 80px;
+      }
     }
   }
 }
 
 .works-section {
+  h2 {
+    display: inline-block;
+  }
+
+  svg {
+    height: 18px;
+    width: 25px;
+  }
+
   h4 {
     word-wrap: break-word;
   }
@@ -169,7 +190,6 @@ main {
   flex-direction: row;
   justify-content: space-around;
   a {
-    color: black;
     svg {
       height: 40px;
       width: 40px;
@@ -319,6 +339,10 @@ footer {
     align-items: center;
     text-align: center;
 
+    a {
+      color: #c69;
+    }
+
     h5 {
       max-width: 200px;
     }
@@ -337,22 +361,12 @@ footer {
 }
 
 #icon {
-  color: $white;
   font-size: 36px;
-}
-
-a {
-  color: black;
 }
 
 a:hover {
   color: $hoverColor;
-  transition: .5s;
-}
-
-#icon:hover {
-  color: $hoverColor;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 // ==================================
@@ -447,5 +461,4 @@ a:hover {
   * {
     display: none;
   }
-  
 }
