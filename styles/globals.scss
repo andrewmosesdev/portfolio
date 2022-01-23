@@ -371,6 +371,12 @@ a:hover {
 
 // ==================================
 
+@media screen and (min-width: 771px) {
+  #main-container > main > section.works-section > svg {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 770px) {
   .book-links {
     flex-direction: column;
