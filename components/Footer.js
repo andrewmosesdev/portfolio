@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  FaTwitter,
-  FaLinkedin,
-  FaInstagram,
-  FaEnvelope,
-} from "react-icons/fa";
+import { FaTwitter, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
 import IconTree from "./IconTree";
 
 export default function Footer() {
@@ -68,7 +63,16 @@ export default function Footer() {
           <h4>Built with:</h4>
           <IconTree />
           <h5>
-            Need a website or landing page? Reach out through any of the links to the left.
+            Need a website?{" "}
+            <a
+              href="mailto:andrewmosesdrive@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Link to email me directly"
+            >
+              {" "}
+              Let&apos;s talk.
+            </a>
           </h5>
         </section>
       </div>
