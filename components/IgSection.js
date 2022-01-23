@@ -10,7 +10,12 @@ export default function IgSection() {
         <h3>
           <i>gravity</i>
         </h3>
-        <a href="https://www.instagram.com/p/CY19qkOP0PB/" alt="">
+        <a
+          href="https://www.instagram.com/p/CY19qkOP0PB/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Link to my instagram page"
+        >
           <Image
             placeholder={"blur"}
             src={igPic}
