@@ -25,7 +25,6 @@ export default function Home() {
       </Head>
       <Header pageType={"home"} />
       <MainContent>
-        <HeroSection />
         <WorksSection />
         <div className="split-section">
           <IgSection />
