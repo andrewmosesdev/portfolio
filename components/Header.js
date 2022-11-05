@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header>
       <div className="header-inner-container">
-        <h3>amwriteswords</h3>
+        <h1>amwriteswords</h1>
       </div>
     </header>
   );

@@ -325,31 +325,21 @@ footer {
   margin-left: $side-margin;
   margin-right: $side-margin;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 
-  .links-section {
-    width: 50%;
+  .built-by-section {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 282px;
-  }
-  .built-with-section {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
 
     a {
       color: #c69;
-    }
-
-    h5 {
-      max-width: 200px;
+      font: bold;
+      text-decoration: none;
     }
   }
 
-  h4,
-  h5 {
+  span {
     color: $white;
   }
 }
@@ -432,15 +422,8 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .footer-inner-container .links-section {
+  .footer-inner-container {
     margin-bottom: 0px;
-  }
-
-  .footer-inner-container .built-with-section {
-    @include flexStart;
-  }
-  .footer-contact-links {
-    flex-direction: column;
   }
 
   .split-section {
@@ -454,11 +437,8 @@ a:hover {
 @media screen and (max-width: 319px) {
   .footer-inner-container {
     justify-content: center;
-    .built-with-section {
+    .built-by-section {
       display: none;
-    }
-    .links-section {
-      text-align: center;
     }
   }
 }
