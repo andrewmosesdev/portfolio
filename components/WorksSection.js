@@ -17,13 +17,14 @@ export default function WorksSection() {
           rel="noreferrer"
         >
           <Image
+            priority
             placeholder={"blur"}
             src={conversations}
             alt={"Conversations with Myself book cover"}
             width={200}
             height={300}
           />
-          <h4>Conversations with Myself</h4>
+          <h3>Conversations with Myself</h3>
         </a>
         <a
           href={
@@ -33,12 +34,13 @@ export default function WorksSection() {
           rel="noreferrer"
         >
           <Image
+            priority
             src={sadderSongs}
             alt={"Sadder Songs book cover"}
             width={200}
             height={300}
           />
-          <h4>Sadder Songs</h4>
+          <h3>Sadder Songs</h3>
         </a>
         <a
           href={
@@ -48,12 +50,13 @@ export default function WorksSection() {
           rel="noreferrer"
         >
           <Image
+            priority
             src={allTheThingsImg}
             alt={"All the Things I Never had the Guts to Say book cover"}
             width={200}
             height={300}
           />
-          <h4>All the Things I Never had the Guts to Say</h4>
+          <h3>All the Things I Never had the Guts to Say</h3>
         </a>
       </div>
     </section>

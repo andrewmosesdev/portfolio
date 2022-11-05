@@ -11,7 +11,7 @@ import IgSection from "../components/IgSection";
 export default function Home() {
   return (
     <div id="main-container" className="main-container">
-      <Head>
+      <Head lang="en">
         <title>amwriteswords</title>
         <meta property="og:title" content="amwriteswords" />
         <meta property="og:type" content="website" />
